@@ -1,0 +1,5 @@
+<div class="chat-room-users">
+    <h3>Users</h3>
+    <app-search (users_to_display)="onUserSearch($event)"></app-search>
+    <div *ngFor="let user of usersToDisplay" class="user">{{user.userName}}</div>
+</div>

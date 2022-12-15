@@ -1,23 +1,10 @@
-*{
-  box-sizing: border-box;
-}
-button{
-    padding: 10px;
-    margin:5px;
-}
-
-input{
-    display: block;
-    margin: 10px;
-    padding: 5px;
-}
 
 .square{
   /* margin: auto; */
   /* margin-top: calc(50vh - 150px); */
-  /* height: 50vh;
-  width: 50vh; */
-  width: fit-content;
+  /* min-height: 40vw;
+  min-width: 40vw;  */
+  /* width: fit-content; */
 
   border: 2px solid red;
 }
@@ -50,9 +37,10 @@ input{
 }
 
 .square-damka{
-  height: 40px;
-  width: 40px;
-
+  /* min-height: 40px;
+  min-width: 40px; */
+  height: calc(30vw / 8 );
+  width: calc(30vw / 8 );
   color: pink;
   display: flex;
   align-items: center;
@@ -98,13 +86,4 @@ input{
     height: 100px;
     background-color: yellow;
     border-radius: 50%;
-}
-
-.main{
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 4rem);
 }

@@ -1,0 +1,12 @@
+<div class="chat-room-main">
+    <h3>chat room</h3>
+    <div class="messages-content">
+        <app-chat-message 
+            *ngFor="let message of messages" 
+            [isMyMessage]="message.user.id === myUser.id" 
+            [message]="message"
+        >
+        </app-chat-message>
+    </div>        
+    <app-chat-room-new-message (addNewMessage)="addNewMessage($event)"></app-chat-room-new-message>
+</div>

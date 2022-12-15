@@ -1,0 +1,33 @@
+.chat-room-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;    
+    max-height: calc(100vh - 300px);
+}
+
+h3{
+    border-bottom: 1px solid black;
+}
+
+.messages-content{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: flex-end;
+    scroll-behavior: smooth;
+    gap: 1.5rem;
+    height: 100%; 
+    max-height: calc(100vh - 350px);
+    overflow: auto;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    scroll-snap-type: y proximity;
+}
+    
+.messages-content>div:last-child {
+    scroll-snap-align: end;
+}

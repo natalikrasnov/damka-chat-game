@@ -1,0 +1,14 @@
+.footer{
+    height: 2rem;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

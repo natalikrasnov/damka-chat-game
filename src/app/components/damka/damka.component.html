@@ -1,0 +1,14 @@
+<select (change)="onChangeDamkaBoard($event)">
+    <option value="8">8x8</option>
+    <option value="10">10x10</option>
+</select>
+
+<div class="square damka-board">
+    <div *ngFor="let _ of damkaBoardState; let index=index" class="flex-row">
+        <div *ngFor="let _ of damkaBoardState; let i=index " class="square-damka"
+            [ngClass]="(i+index)%2 !== 0? 'black': 'white'" (click)="addPion({x: index, y:i})">
+            <div *ngIf="damkaBoardState[index][i]" class="move"></div>
+        </div>
+    </div>
+</div>
+

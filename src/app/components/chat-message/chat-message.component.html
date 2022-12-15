@@ -1,0 +1,6 @@
+<div class="container">
+    <div [ngClass]="'message '+ (isMyMessage? 'my-message': '')" [ngStyle]="{backgroundColor: getBackgroundColor}">
+        <label class="username">{{message.user.userName}}</label>
+        <p class="text-message">{{message.message}}</p>
+    </div>
+</div>
